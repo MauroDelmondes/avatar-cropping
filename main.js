@@ -128,8 +128,22 @@ function dragSquare(square) {
         square.style.top = (square.offsetTop - position2) + 'px';
         square.style.left = (square.offsetLeft - position1) + 'px';
 
-        resizableParams.resizableTop    = parseInt(resizable.style.top);
-        resizableParams.resizableLeft   = parseInt(resizable.style.left);
+        canvasWidth = parseInt(window.getComputedStyle(canvasAvatar).getPropertyValue('width'));
+        canvasHeight = parseInt(window.getComputedStyle(canvasAvatar).getPropertyValue('width'));
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+
+        //equation
+        let resultLeft = resizableParams.resizableLeft * canvasWidth;
+        let finalResultLeft = parseInt(resultLeft / screenWidth);
+
+        //equation
+        let resultTop = resizableParams.resizableTop * canvasHeight;
+        let finalResultTop = parseInt(resultTop / screenHeight);
+
+        resizableParams.resizableTop  = finalResultTop;
+        resizableParams.resizableLeft = finalResultLeft;
+
 
         // console.log(`position 3 - dentro: ${position3}`)
         // console.log(`position 4 - dentro: ${position4}`)
