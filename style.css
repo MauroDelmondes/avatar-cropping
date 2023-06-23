@@ -1,0 +1,79 @@
+#avatar-container {
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#avatar-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 800px;
+    max-height: 80vh;
+}
+
+
+/*square*/
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: black;
+}
+
+#resizable {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: 1;
+}
+
+.central-circle {
+    width: 100% !important;
+    height: 100% !important;
+    border: 1px dashed white !important;
+    cursor:all-scroll
+}
+
+#resizable .resizers {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px dashed white;
+}
+
+.resizer, .central-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, -1);
+    position: absolute;
+}
+
+.resizer.bottom-right {
+    bottom: 0px;
+    border: none;
+    border-radius: 0%;
+    background-color: rgba(219, 219, 219, 0);
+    cursor: nwse-resize;
+    right: 0px;
+}
+
+.preview-avatar-container {
+    position: absolute;
+    top: 800px;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+#preview-avatar-canvas {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 50%;
+}

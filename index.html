@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Cropper</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="file" id="avatar-input">
+    <div id="avatar-container">
+
+        <div id="resizable">
+            <div id="resizableCircle" class="resizer central-circle"></div>
+            <div class="resizers">
+                <div class="resizer bottom-right"></div>
+            </div>
+        </div>
+
+        <canvas id="avatar-canvas"></canvas>
+    </div>
+
+    <div class="preview-avatar-container">
+        <canvas id="preview-avatar-canvas"></canvas>
+    </div>
+
+    <div><button id="download">Download Image</button></div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
