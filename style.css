@@ -2,14 +2,18 @@
     position: absolute;
     top: 100px;
     left: 0;
+    width: 50vw;
+    height: 50vh;
+    background-color: blue;
 }
 
 #avatar-canvas {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 800px;
-    max-height: 80vh;
+    object-fit: cover;
+    max-width: 50vw;
+    max-height: 50vh;
 }
 
 

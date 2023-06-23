@@ -2,6 +2,7 @@ const inputAvatar = document.querySelector('#avatar-input');
 const canvasAvatar = document.querySelector('#avatar-canvas');
 const context = canvasAvatar.getContext('2d');
 const resizable = document.querySelector('#resizable');
+const avatarContainer = document.querySelector('#avatar-container');
 
 const resizableParams = {
     file : '',
@@ -195,3 +196,4 @@ downloadButton.addEventListener('click', function() {
 // https://jamesooi.design/Croppr.js/
 // https://www.abstractapi.com/guides/crop-image-javascript
 // https://avatarcropper.com/
+// https://www.w3schools.com/howto/howto_js_draggable.asp
